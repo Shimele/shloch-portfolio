@@ -1,0 +1,199 @@
+
+body{
+    max-height: 100%;
+    max-width: 100%;
+}
+.background {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("http://www.carrefourfga.ca/wp-content/uploads/2017/02/laptop.jpeg");
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 700px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+.heading{
+    max-width: 50%;
+    color: #F9FAFD;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:20%;
+    left: 20%;
+}
+.background hr {
+    max-width: 50%;
+    background-color: white;
+    text-align: center;
+    margin-top: 27%;
+}
+#navigation {
+    max-width: 30%;
+    text-align: center;
+    margin-top: 27%;
+    margin-left: 42%;
+  }
+  .nav-link {
+      float: left;
+      padding-top: 0px;
+      padding-right: 6px;
+      scroll-margin-right: 10px;
+      background: linear-gradient(to left, #FFB85F, #FF7A5A, #00AAA0, #FCF4D9);
+    
+  }
+  a {
+      text-decoration: none;
+      font-size: 13px;
+      color: #03369B; 
+      font-weight: bold;
+  }
+  .nav-link:hover {
+    color: white;
+  }
+  #image{
+    margin-left: 85%;
+    position: relative;
+    top: 17%;
+  }
+  #image img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+  }
+  #fontawesome {
+      position: relative;
+      bottom: 15%;
+      left: 30%;
+      text-align: center;
+    }
+    .fa {
+        font-size: 20px;
+        width: 30px;
+        text-decoration: none;
+        color: #0DAEA3;
+      }
+    .fa:hover {
+        color: orange;
+        text-decoration: none;
+      }
+
+
+      /*About Section */
+      h5{
+          text-align: center;
+      }
+      .about{
+          padding-top: 5%;
+          text-align: center;
+      }
+      .content .container{
+          padding-top: 3%;
+          padding-bottom: 10%;
+      }
+      
+      .green{
+          background-color: #6ECBB9;
+          width: 74%;
+      }
+      .red{
+        background-color:#34A092;
+        width: 90%;
+    }
+    .yellow{
+        background-color: #FF835B;
+        width: 80%;
+    }
+    .blue{
+        background-color: rgb(107, 53, 35);
+        width: 60%;
+    }
+    .myProgress {
+        width: 100%;
+        background-color: grey;
+      }
+      .my-bar{
+          color: white;
+          padding-left: 2%;
+      }
+      
+      
+
+    /* Project section */
+    .project-bg {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://simoncranney.files.wordpress.com/2018/01/header.jpeg");
+        background-size: cover;
+        /*background-color: #F4F4F4;*/
+        background-size: cover;
+        width: 80%;
+        height: 700px;
+        margin: 0 auto;
+    }
+    .project-bg .container{
+        margin-top: 5%;
+        width: 70%;
+        margin-bottom: 10%;
+    
+    }
+    .project-bg .col a{
+        text-decoration: none;
+        color:#6B3523;
+        font-weight: bold;
+    }
+    .project-bg .col a:hover{
+        color: #090861;
+        text-decoration: underline;
+    }
+    .project-bg hr{
+        color:white;
+    }
+    
+    .project-bg img{
+        width: 100%;
+        height: 120px;
+    }
+
+    .checkout{
+        margin: 5%;
+        padding: 5%;
+        color: white;
+        height: 50px;
+    }
+    .checkout h3{
+        border-left: 6px solid #34A092;
+        padding-left: 1%;
+    }
+    .project-bg hr{
+        max-width: 30%;
+        background-color: #34A092;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .code{
+        padding-right:50%;
+    }
+    .project-bg .col .description{
+        color: #090861;
+    }
+
+    /* Image zoom effect */
+.img-hover-zoom {
+    height: 200px; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  .img-hover-zoom img {
+    transition: transform .5s ease-out;
+  }
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  }
+  
+  /* blog section */
+  
