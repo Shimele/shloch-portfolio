@@ -35,24 +35,22 @@ body{
     max-width: 30%;
     text-align: center;
     margin-top: 27%;
-    margin-left: 42%;
+    margin-left: 38%;
   }
   .nav-link {
       float: left;
       padding-top: 0px;
       padding-right: 6px;
-      scroll-margin-right: 10px;
-      background: linear-gradient(to left, #FFB85F, #FF7A5A, #00AAA0, #FCF4D9);
-    
+      background-color: white   
   }
   a {
       text-decoration: none;
       font-size: 13px;
-      color: #03369B; 
+      color: #0DAEA3; 
       font-weight: bold;
   }
   .nav-link:hover {
-    color: white;
+    color:#FF7853;
   }
   #image{
     margin-left: 85%;
@@ -77,7 +75,7 @@ body{
         color: #0DAEA3;
       }
     .fa:hover {
-        color: orange;
+        color: #FF7853;
         text-decoration: none;
       }
 
@@ -93,6 +91,7 @@ body{
       .content .container{
           padding-top: 3%;
           padding-bottom: 10%;
+          width: 80%;
       }
       
       .green{
@@ -139,7 +138,7 @@ body{
     }
     .project-bg .col a{
         text-decoration: none;
-        color:#6B3523;
+        color:#FF7853;
         font-weight: bold;
         margin-top: 5%;
     }
