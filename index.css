@@ -1,14 +1,16 @@
 
-body{
+html, body{
     max-height: 100%;
     max-width: 100%;
+    font-family: 'poppins', sans-serif;
+    color: #222;
 }
 .background {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("http://www.carrefourfga.ca/wp-content/uploads/2017/02/laptop.jpeg");
     background-size: cover;
     background-position: top;
     max-width: 100%;
-    height: 800px;
+    height: 670px;
     color: white;
     display: flex;
     align-items: center;
@@ -16,25 +18,20 @@ body{
     display: block;
 }
 .heading{
-    max-width: 50%;
     color: #F9FAFD;
     display: block;
     align-items: center;
     justify-content: center;
     position: relative;
     top:20%;
-    left: 20%;
+    left: 10%;
+    word-wrap: break-word;
 }
-.background hr {
-    max-width: 50%;
-    background-color: white;
-    text-align: center;
-    margin-top: 27%;
-}
-#navigation {
+
+nav {
     max-width: 30%;
     text-align: center;
-    margin-top: 27%;
+    margin-top: 25%;
     margin-left: 38%;
   }
   .nav-link {
@@ -52,12 +49,12 @@ body{
       font-weight: bold;
   }
   .nav-link:hover {
-    color: white;
+    color: orange;
   }
   #image{
     margin-left: 85%;
     position: relative;
-    top: 17%;
+    top: 10%;
   }
   #image img{
       width: 100px;
@@ -65,14 +62,12 @@ body{
       border-radius: 50%;
   }
   #fontawesome {
-      position: relative;
-      bottom: 15%;
-      left: 30%;
       text-align: center;
     }
+
     .fa {
-        font-size: 20px;
-        width: 30px;
+        font-size: 30px;
+        width: 40px;
         text-decoration: none;
         color: #0DAEA3;
       }
@@ -208,31 +203,66 @@ body{
         };
     }
     
+    /*skills Section */
+    .fixed-image{
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/105093312/original/b1f042a00f780b5ed0516016876e7568871da72e/code-html-css-javascript-php-mysql-for-you.png");
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+    }
+    #skills { 
+        width: 80%;
+        margin: 0 auto;color: white;
+        font-weight: bold;
+    }
+    
+    #skills .fa-code{
+        color: #e54d26;
+    }
+    #skills .fa-bold{
+        color: #563d7c;
+    }
+    #skills .fa-css3{
+        color: #2163af;
+    }
+    #skills .fa-css3, .fa-code, .fa-bold{
+        font-size: 4em;
+        margin: 1rem;
+    }
+    #skills .padding{
+        padding-bottom: 2em;
+    }
+    #skills .welcome{
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    #skills hr{
+        border-top: 2px solid #b4b4b4;
+        width:95%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 
     /* Project section */
-    .project-bg {
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://simoncranney.files.wordpress.com/2018/01/header.jpeg");
-        background-size: cover;
-        /*background-color: #F4F4F4;*/
-        background-size: cover;
+    #projects .add-margin{
+        padding-bottom: 20%;
         width: 80%;
-        height: 700px;
+    }
+    .project-bg {
         margin: 0 auto;
     }
     .project-bg .container{
-        margin-top: 5%;
-        width: 80%;
         margin-bottom: 10%;
     
     }
-    .project-bg .col a{
+    .project-bg .coll a{
         text-decoration: none;
         color:#6B3523;
         font-weight: bold;
     }
-    .project-bg .col a:hover{
+    .project-bg .coll a:hover{
         color: #090861;
-        text-decoration: underline;
     }
     .project-bg hr{
         color:white;
@@ -240,7 +270,7 @@ body{
     
     .project-bg img{
         width: 100%;
-        height: 120px;
+        height: 100px;
     }
 
     .checkout{
@@ -259,10 +289,11 @@ body{
         text-align: center;
         margin-left: 10px;
     }
+    
     .code{
         padding-right:40%;
     }
-    .project-bg .col .description{
+    .project-bg .coll .description{
         color: #090861;
     }
 
@@ -334,7 +365,6 @@ body{
 }
 .last-section{
     margin-top: 50px;
-    height: 300px;
 }
 .last-section .col{
     color: white;
