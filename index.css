@@ -212,9 +212,16 @@ nav {
     }
     #skills { 
         width: 80%;
-        margin: 0 auto;color: white;
+        margin: 0 auto;
+        color: white;
         font-weight: bold;
+        padding-top: 10%;
     }
+    @media only screen and (max-width: 600px) {
+        #skills p{
+            display: none;
+        }
+      }
     
     #skills .fa-code{
         color: #e54d26;
@@ -225,7 +232,16 @@ nav {
     #skills .fa-css3{
         color: #2163af;
     }
-    #skills .fa-css3, .fa-code, .fa-bold{
+    #skills .fa-js-square{
+        color: #E8E500;
+    }
+    #skills .fa-php{
+        color: #4647F7;
+    }
+    #skills .fa-gem{
+        color: #F3007E;
+    }
+    #skills .fa-css3, .fa-code, .fa-bold, .fa-js-square, .fa-php, .fa-gem{
         font-size: 4em;
         margin: 1rem;
     }
@@ -233,7 +249,7 @@ nav {
         padding-bottom: 2em;
     }
     #skills .welcome{
-        width: 75%;
+        width: 85%;
         margin: 0 auto;
         padding-top: 2rem;
     }
@@ -249,6 +265,11 @@ nav {
         padding-bottom: 20%;
         width: 80%;
     }
+    @media only screen and (max-width: 600px) {
+        #projects .add-margin{
+            padding-top: 28%;
+        }
+      }
     .project-bg {
         margin: 0 auto;
     }
@@ -280,12 +301,12 @@ nav {
         height: 50px;
     }
     .checkout h3{
-        border-left: 6px solid #34A092;
+        border-left: 6px solid #e54d26;
         padding-left: 1%;
     }
     .project-bg hr{
         max-width: 30%;
-        background-color: #34A092;
+        background-color: #e54d26;
         text-align: center;
         margin-left: 10px;
     }
@@ -316,6 +337,20 @@ nav {
   /* blog section */
   #blog {
       height: 400px;
+  }
+  @media only screen and (max-width: 600px) {
+    #blog .color-ball{
+        display: none;
+    }
+    #blog .h5{
+        font-size: 10px;
+    }
+    #blog p{
+        font-size: 10px;
+    }
+    #blog a{
+        color: #e54d26 !important;
+    }
   }
   .carousel-item{
     height: 220px;
