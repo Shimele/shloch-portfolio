@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans|Pacifico&display=swap');
 
 html, body{
+    font-family: 'Open Sans', sans-serif;
     max-height: 100%;
     max-width: 100%;
     font-family: 'poppins', sans-serif;
     color: #222;
 }
 .background {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("http://www.carrefourfga.ca/wp-content/uploads/2017/02/laptop.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("img/portfolio2.jpeg");
     background-size: cover;
     background-position: top;
     max-width: 100%;
@@ -17,21 +19,19 @@ html, body{
     justify-content: center;
     display: block;
 }
-.heading{
+.head h1{
+    font-family: 'Lobster', cursive;
+}
+.head .row .col-12{
     color: #F9FAFD;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top:20%;
-    left: 10%;
-    word-wrap: break-word;
+    margin-top: 10%;
+    text-align: center;
 }
 
 nav {
     max-width: 30%;
     text-align: center;
-    margin-top: 25%;
+    
     margin-left: 38%;
   }
   .nav-link {
@@ -53,8 +53,7 @@ nav {
   }
   #image{
     margin-left: 85%;
-    position: relative;
-    top: 10%;
+    margin-top: 15%;
   }
   #image img{
       width: 100px;
@@ -66,8 +65,6 @@ nav {
     }
 
     .fa {
-        font-size: 30px;
-        width: 40px;
         text-decoration: none;
         color: #0DAEA3;
       }
@@ -205,22 +202,22 @@ nav {
     
     /*skills Section */
     .fixed-image{
-        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/105093312/original/b1f042a00f780b5ed0516016876e7568871da72e/code-html-css-javascript-php-mysql-for-you.png");
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cdn.dribbble.com/users/81337/screenshots/4281881/hex_doctor-04-comp_a-800x600-selective_256-lossy_16.gif");
         background-size: cover;
         background-attachment: fixed;
         width: 100%;
     }
     #skills { 
         width: 80%;
-        margin: 0 auto;
-        color: white;
+        color:white;
         font-weight: bold;
-        padding-top: 10%;
+        margin: 0 auto;
     }
     @media only screen and (max-width: 600px) {
-        #skills p{
+        #skills p, .lead{
             display: none;
         }
+    
       }
     
     #skills .fa-code{
@@ -249,12 +246,12 @@ nav {
         padding-bottom: 2em;
     }
     #skills .welcome{
-        width: 85%;
+        width: 80%;
         margin: 0 auto;
         padding-top: 2rem;
     }
     #skills hr{
-        border-top: 2px solid #b4b4b4;
+        border-top: 2px solid #e54d26;
         width:95%;
         margin-top: 1rem;
         margin-bottom: 1rem;
