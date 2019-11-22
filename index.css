@@ -201,17 +201,23 @@ nav {
     }
     
     /*skills Section */
-    .fixed-image{
+    /*.fixed-image{
         background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://cdn.dribbble.com/users/81337/screenshots/4281881/hex_doctor-04-comp_a-800x600-selective_256-lossy_16.gif");
         background-size: cover;
         background-attachment: fixed;
         width: 100%;
+        height: 500px;
+    }*/
+    .fixed-image{
+        background-color: #F9F9F9;
     }
     #skills { 
         width: 80%;
-        color:white;
+        color:black;
         font-weight: bold;
         margin: 0 auto;
+        padding-top: 3%;
+        padding-bottom: 2%;
     }
     @media only screen and (max-width: 600px) {
         #skills p, .lead{
@@ -220,6 +226,11 @@ nav {
     
       }
     
+    .skill-set{
+        margin: 0 auto;
+        font-size: 20px;
+        
+    }
     #skills .fa-code{
         color: #e54d26;
     }
@@ -239,8 +250,11 @@ nav {
         color: #F3007E;
     }
     #skills .fa-css3, .fa-code, .fa-bold, .fa-js-square, .fa-php, .fa-gem{
-        font-size: 4em;
+        font-size: 2em;
         margin: 1rem;
+    }
+    #skills h3, p{
+        font-size: 1em;
     }
     #skills .padding{
         padding-bottom: 2em;
@@ -248,18 +262,23 @@ nav {
     #skills .welcome{
         width: 80%;
         margin: 0 auto;
-        padding-top: 2rem;
     }
     #skills hr{
         border-top: 2px solid #e54d26;
-        width:95%;
+        width:50%;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
 
     /* Project section */
+    #projects{
+        background-image: url(img/stripe.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
     #projects .add-margin{
-        padding-bottom: 20%;
+        padding-bottom: 10%;
         width: 80%;
     }
     @media only screen and (max-width: 600px) {
@@ -271,7 +290,8 @@ nav {
         margin: 0 auto;
     }
     .project-bg .container{
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+        margin-top: 5%;
     
     }
     .project-bg .coll a{
@@ -292,9 +312,9 @@ nav {
     }
 
     .checkout{
-        margin: 5%;
+        margin-bottom: 3%;
         padding: 5%;
-        color: white;
+        color: black;
         height: 50px;
     }
     .checkout h3{
