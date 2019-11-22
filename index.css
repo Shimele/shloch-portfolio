@@ -272,9 +272,9 @@ nav {
 
     /* Project section */
     #projects{
-        background-image: url(img/stripe.png);
+        background-image: url(img/stripe.jpg);
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
     }
     #projects .add-margin{
