@@ -61,13 +61,10 @@ nav {
   }
   #fontawesome {
       text-align: center;
+      margin-left: 10%;
     }
 
-    .fa {
-        text-decoration: none;
-        color: #0DAEA3;
-      }
-    .fa:hover {
+    .fab:hover {
         color: orange;
         text-decoration: none;
       }
