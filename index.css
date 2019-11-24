@@ -44,7 +44,6 @@ nav {
   }
   a {
       text-decoration: none;
-      font-size: 13px;
       color: #0DAEA3; 
       font-weight: bold;
   }
@@ -212,12 +211,11 @@ nav {
         background-color: #F9F9F9;
     }
     #skills { 
-        width: 80%;
         color:black;
         font-weight: bold;
-        margin: 0 auto;
         padding-top: 3%;
         padding-bottom: 2%;
+        padding-left: 20%;
     }
     @media only screen and (max-width: 600px) {
         #skills p, .lead{
@@ -225,12 +223,6 @@ nav {
         }
     
       }
-    
-    .skill-set{
-        margin: 0 auto;
-        font-size: 20px;
-        
-    }
     #skills .fa-code{
         color: #e54d26;
     }
@@ -256,18 +248,15 @@ nav {
     #skills h3, p{
         font-size: 1em;
     }
-    #skills .padding{
-        padding-bottom: 2em;
-    }
-    #skills .welcome{
-        width: 80%;
-        margin: 0 auto;
+    #skills h2{
+        margin-left: 32%;
     }
     #skills hr{
         border-top: 2px solid #e54d26;
-        width:50%;
+        width:30%;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        margin-left: 27%;
     }
 
     /* Project section */
@@ -278,7 +267,7 @@ nav {
         background-size: cover;
     }
     #projects .add-margin{
-        padding-bottom: 10%;
+        padding-top: 7%;
         width: 80%;
     }
     @media only screen and (max-width: 600px) {
@@ -353,7 +342,7 @@ nav {
   
   /* blog section */
   #blog {
-      height: 400px;
+      
   }
   @media only screen and (max-width: 600px) {
     #blog .color-ball{
@@ -412,16 +401,6 @@ nav {
     text-decoration: none;
   }
 
-#blog .container{
-    padding-top: 3%;
-}
-.last-section{
-    margin-top: 50px;
-}
-.last-section .col{
-    color: white;
-}
-
 .blinking{
     animation:blinkingText 1s infinite;
     padding-left: 8%;
@@ -434,5 +413,14 @@ nav {
     100%{   color: #ffff;    }
 }
 #footer{
-    height: 300px;
+    background-color: black;
+    padding-left: 25%;
+}
+.footer-text{
+    width: 80%;
+    padding: 5px;
+    color: white;
+}
+.footer-text i{
+    color: rgb(250, 118, 98);
 }
