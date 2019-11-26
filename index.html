@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg" id="sticky-top">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -89,15 +89,15 @@
                 <hr>
             <div class="container-fluid padding">
                 <div class="row" data-aos="zoom-in-down">
-                    <div class="col-xs-12 col-md-4 col-sm-6 skill-set">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <a class="fa fa-code"></a>
                         <h3>HTML5</h3>
                     </div>
-                    <div class="col-xs-12 col-md-4 col-sm-6 skill-set">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <a class="fa fa-bold"></a>
                         <h3>BOOTSTRAP</h3>
                     </div>
-                    <div class="col-xs-12 col-md-4 col-sm-6 skill-set">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <a class="fab fa-css3"></a>
                         <h3>CSS3/SASS</h3>
                     </div>
@@ -105,15 +105,15 @@
             </div>
             <div class="container-fluid">
                     <div class="row" data-aos="zoom-in-down">
-                        <div class="col-xs-12 col-md-4 col-sm-6 skill-set">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
                             <a class="fab fa-js-square"></a>
                             <h3>Javascript-React</h3>
                         </div>
-                        <div class="col-xs-12 col-md-4 col-sm-6 skill-set">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
                             <a class="fab fa-php"></a>
                             <h3>PHP-Code Igniter</h3>
                         </div>
-                        <div class="col-xs-12 col-md-4 col-sm-6 skill-set">
+                        <div class="col-lg-4 col-md-4 col-sm-6">
                             <a class="fas fa-gem"></a>
                             <h3>Ruby-Rails</h3>
                         </div>
@@ -257,15 +257,38 @@
 <script src="aos.js"></script>
 
 <script>
-    AOS.init({
-        offset:200,
-        duration: 2000,
-    });
-    //setInterval(
-//function () {
-  //var randomColor = Math.floor(Math.random()*16777215).toString(16);
-  //document.getElementById("last-section").style.backgroundColor = "#"+randomColor;
-//},3000);
-</script>
+        // code for page animation using the AOS library
+        AOS.init({
+            offset:200,
+            duration: 2000,
+        });
+        //setInterval(
+    //function () {
+      //var randomColor = Math.floor(Math.random()*16777215).toString(16);
+      //document.getElementById("last-section").style.backgroundColor = "#"+randomColor;
+    //},3000);
+    
+    // code for fixed nav on scroll
+    
+    // When the user scrolls the page, execute myFunction amimed at having at fixed nav on scroll
+    window.onscroll = function() {myFunction()};
+    
+    // Get the header
+    var header = document.getElementById("sticky-top");
+    
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+    
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        
+      } else {
+        header.classList.remove("sticky");
+       
+      }
+    }
+    </script>
 </body>
 </html>
