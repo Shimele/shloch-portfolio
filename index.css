@@ -49,6 +49,13 @@ nav {
     /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
     padding-top: 15px;
   }
+  .sticky-image {
+    position: fixed;
+    left: 0;
+    z-index:1;
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    padding-top: 15px;
+  }
   
    
   .nav-link {
@@ -67,7 +74,7 @@ nav {
       margin-bottom: 10px;
   }
   .nav-link:hover {
-    color: rgb(248, 94, 43);
+    color: white;
   }
   #image{
     margin-left: 85%;
@@ -303,9 +310,9 @@ nav {
 
     /* Project section */
     #projects{
-        background-image: url(img/stripe.jpg);
+        background-image: url(img/binary.png);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
         background-size: cover;
     }
     #projects .add-margin{

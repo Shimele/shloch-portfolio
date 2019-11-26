@@ -28,9 +28,9 @@
                     </div>
                     <div class="col-12">
                         <div id="fontawesome">
-                            <a href="#" class="fab fa-github fa-2x"></a>
-                            <a href="#" class="fab fa-twitter fa-2x"></a>
-                            <a href="#" class="fab fa-linkedin fa-2x"></a>
+                            <a href="https://github.com/Shloch" class="fab fa-github fa-2x"></a>
+                            <a href="https://twitter.com/shloch" class="fab fa-twitter fa-2x"></a>
+                            <a href="https://www.linkedin.com/in/shey-louis-ccnp-lpic-1-suse-cla-89315896/" class="fab fa-linkedin fa-2x"></a>
                         </div>
                     </div>
                 </div>
@@ -44,13 +44,13 @@
                         <a href="#intro" class="nav-link">HOME</a>
                         <a href="#about" class="nav-link">ABOUT</a>
                         <a href="#projects" class="nav-link">PROJECTS</a>
-                        <a href="#" class="nav-link">BLOGS</a>
-                        <a href="#" class="nav-link">CONTACT</a>
+                        <a href="#blog" class="nav-link">BLOGS</a>
+                        <a href="#blog" class="nav-link">CONTACT</a>
                     </div>
                 </div>
             </nav>
             <div id="image" data-aos="flip-right" data-aos-duration="500">
-                <img src="img/profile.jpg" alt="profile picture">
+                <img src="img/profile.jpg" alt="profile picture" id="sticky-img">
             </div>
             
         </div>
@@ -271,7 +271,9 @@
     // code for fixed nav on scroll
     
     // When the user scrolls the page, execute myFunction amimed at having at fixed nav on scroll
-    window.onscroll = function() {myFunction()};
+    window.onscroll = function() {
+        stickyNavFunction()
+        };
     
     // Get the header
     var header = document.getElementById("sticky-top");
@@ -279,16 +281,19 @@
     // Get the offset position of the navbar
     var sticky = header.offsetTop;
     
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
+    // Add the sticky class to the profile picture when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function stickyNavFunction() {
+      var src = document.getElementById("sticky-top");
+
       if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
         
       } else {
         header.classList.remove("sticky");
-       
+        
       }
     }
+
     </script>
 </body>
 </html>
