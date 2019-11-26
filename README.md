@@ -1,6 +1,6 @@
 # Sample portfolio web page
 Building a modest porfolio page with BOOTSTRAP + js
-![alt text](https://github.com/Shimele/TODO-Page/blob/master/img/todo.png)
+![alt text](https://github.com/Shimele/shloch-portfolio/blob/master/img/portfolio.png)
 
 ## Live demo
 
